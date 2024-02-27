@@ -29,11 +29,16 @@ public class Main {
         int max = 200_000;
         int min = 100_000;
         for (int i = 0; i < generateRandomArray().length; i++) {
-            if (arr[i] > max);
+            final int current = arr[i];
+            if (current > max) {
+                max = current;
+            }
         }
-        System.out.println("Максимальная сумма трат за день составила " + generateRandomArray() + " рублей");
+        System.out.println("Максимальная сумма трат за день составила " + max + " рублей");
         for (int i = 0; i < generateRandomArray().length; i++) {
-            if (arr[i]<min);
+            final int current = arr[i];
+            if (current < min);
+            min = current;
         }
         System.out.println("Минимальная сумма трат за день составила " + min + " рублей");
     }
